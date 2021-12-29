@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Local Tales</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="bg-lightgray">
+
+<header>
+  <nav class="mnb navbar navbar-default fixed-top topnav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="ic fa fa-bars"></i>
+        </button> -->
+        <div>
+           <a href="#" id="msbo" class="menuIcon"><i class="ic fa fa-bars"></i></a>
+           <a href="#" class="admin-brand"><img src="./images/logo.png" class="img-fluid"></a>
+        </div>
+      </div>
+      <div id="navbar" class="top-rightmenu">
+        <ul class="navbar-nav ml-aoto">
+          <li>
+            <a href="#"><i class="far fa-bell"></i></a>
+            <span class="count-noti">
+              50
+            </span>
+          </li>
+          <li><a href="#"><i class="fas fa-cog"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--msb: main sidebar-->
+  <div class="msb" id="msb">
+      <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <div class="brand-wrapper">
+            <!-- Brand -->
+            <div class="brand-name-wrapper">
+              <div class="user-profile-pic">
+                <img src="./images/c2.jpg">
+              </div>
+              <h6>John & Doe Group</h6>
+              <ul class="left-menuadd">
+                <li><i class="fas fa-map-marker-alt"></i> 40 Journal Square Plaza, NJ</li>
+                <li><i class="fas fa-globe"></i> www. jdgroup.co.in</li>
+                <li><i class="fas fa-phone-alt"></i> 80-600-800</li>
+              </ul>
+              <div class="social-div text-center">
+                <ul>
+                  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <a href="#" class="pro-edit"><i class="far fa-edit"></i> Edit Profile</a>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+        <!-- Main Menu -->
+        <div class="side-menu-container">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><i class="far fa-edit"></i>Edit page</a></li>
+            <li class="active"><a href="#"><i class="far fa-calendar-alt"></i>Upload events</a></li>
+            <li><a href="#"><i class="fa fa-heart"></i> Upload deals</a></li>
+            <li><a href="#"><i class="far fa-thumbs-up"></i>Manage reviews</a></li>
+            <li><a href="#" class="logout-bg"><i class="fas fa-sign-out-alt"></i>LOGOUT</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>  
+  </div>
+  
+  <!--main content wrapper-->
+  <div class="mcw">
+    <div class="container-fluid">
+        <div class="row m-0">
+            <div class="col-12">
+              <div class="card border-0">
+                <div class="card-body p-0">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link " id="offers-tab" data-toggle="tab" href="#offers" role="tab" aria-controls="offers" aria-selected="false">Latest Offers</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="events-tab" data-toggle="tab" href="#events" role="tab" aria-controls="events" aria-selected="false">Latest Events</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="true">Latest Reviews </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link border-0" id="section-tab" data-toggle="tab" href="#section" role="tab" aria-controls="section" aria-selected="false">Statistics section</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content p-4" id="myTabContent">
+
+                    <div class="tab-pane fade show active" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                      <div class="row m-0">
+                        <div class="col-12 col-md-4 col-lg-4 col-sm-4 mb-3 pl-md-0">
+                          <div class="card review-card active">
+                            <div class="card-body event-body">
+                              <div class="row m-0 col-12 p-0 ">
+                                <div class="col-4 col-md-3 p-0 text-center">
+                                  <div  class="user-pic-rev">
+                                    <img src="./images/rev-pic.png">
+                                  </div>
+                                </div>
+                                <div class="col-8 col-md-9 p-0">
+                                  <h5 class="card-title">SAMUAL WILLIAM</h5>
+                                  <h6 class="card-subtitle mb-2 star-color">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                  </h6>
+                                </div>
+                              </div>
+                              <p class="card-text">
+                                It is a long established fact that a reader will point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packag and web page editors
+                              </p>
+                              <p class="text-right">
+                                <img src="./images/quote-rev.png">
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 col-sm-4 mb-3 pl-md-0">
+                          <div class="card review-card active">
+                            <div class="card-body event-body">
+                              <div class="row m-0 col-12 p-0 ">
+                                <div class="col-4 col-md-3 p-0 text-center">
+                                  <div  class="user-pic-rev">
+                                    <img src="./images/rev-pic.png">
+                                  </div>
+                                </div>
+                                <div class="col-8 col-md-9 p-0">
+                                  <h5 class="card-title ">SAMUAL WILLIAM</h5>
+                                  <h6 class="card-subtitle mb-2 star-color">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                  </h6>
+                                </div>
+                              </div>
+                              <p class="card-text ">
+                                It is a long established fact that a reader will point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packag and web page editors
+                              </p>
+                              <p class="text-right">
+                                <img src="./images/quote-rev.png">
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 col-sm-4 mb-3 pl-md-0">
+                          <div class="card review-card active">
+                            <div class="card-body event-body">
+                              <div class="row m-0 col-12 p-0 ">
+                                <div class="col-4 col-md-3 p-0 text-center">
+                                  <div  class="user-pic-rev">
+                                    <img src="./images/rev-pic.png">
+                                  </div>
+                                </div>
+                                <div class="col-8 col-md-9 p-0">
+                                  <h5 class="card-title">SAMUAL WILLIAM</h5>
+                                  <h6 class="card-subtitle mb-2 star-color">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                  </h6>
+                                </div>
+                              </div>
+                              <p class="card-text ">
+                                It is a long established fact that a reader will point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packag and web page editors
+                              </p>
+                              <p class="text-right">
+                                <img src="./images/quote-rev.png">
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 col-sm-4 mb-3 pl-md-0">
+                          <div class="card review-card active">
+                            <div class="card-body event-body">
+                              <div class="row m-0 col-12 p-0 ">
+                                <div class="col-4 col-md-3 p-0 text-center">
+                                  <div  class="user-pic-rev">
+                                    <img src="./images/rev-pic.png">
+                                  </div>
+                                </div>
+                                <div class="col-8 col-md-9 p-0">
+                                  <h5 class="card-title ">SAMUAL WILLIAM</h5>
+                                  <h6 class="card-subtitle mb-2 star-color">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                  </h6>
+                                </div>
+                              </div>
+                              <p class="card-text ">
+                                It is a long established fact that a reader will point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packag and web page editors
+                              </p>
+                              <p class="text-right">
+                                <img src="./images/quote-rev.png">
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div><!--end-main content wrapper-->
+</header>
+
+<!--Script-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+
+
+</body>
+</html>

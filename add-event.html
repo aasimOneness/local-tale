@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Local Tales</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-lightgray">
+
+    <header>
+        <nav class="mnb navbar navbar-default fixed-top topnav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="ic fa fa-bars"></i>
+        </button> -->
+                    <div>
+                        <a href="#" id="msbo" class="menuIcon"><i class="ic fa fa-bars"></i></a>
+                        <a href="#" class="admin-brand"><img src="./images/logo.png" class="img-fluid"></a>
+                    </div>
+                </div>
+                <div id="navbar" class="top-rightmenu">
+                    <ul class="navbar-nav ml-aoto">
+                        <li>
+                            <a href="#"><i class="far fa-bell"></i></a>
+                            <span class="count-noti">
+                                50
+                            </span>
+                        </li>
+                        <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--msb: main sidebar-->
+        <div class="msb" id="msb">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <div class="brand-wrapper">
+                        <!-- Brand -->
+                        <div class="brand-name-wrapper">
+                            <div class="user-profile-pic">
+                                <img src="./images/c2.jpg">
+                            </div>
+                            <h6>John & Doe Group</h6>
+                            <ul class="left-menuadd">
+                                <li><i class="fas fa-map-marker-alt"></i> 40 Journal Square Plaza, NJ</li>
+                                <li><i class="fas fa-globe"></i> www. jdgroup.co.in</li>
+                                <li><i class="fas fa-phone-alt"></i> 80-600-800</li>
+                            </ul>
+                            <div class="social-div text-center">
+                                <ul>
+                                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                                <a href="#" class="pro-edit"><i class="far fa-edit"></i> Edit Profile</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Main Menu -->
+                <div class="side-menu-container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><i class="far fa-edit"></i>Edit page</a></li>
+                        <li class="active"><a href="#"><i class="far fa-calendar-alt"></i>Upload events</a></li>
+                        <li><a href="#"><i class="fa fa-heart"></i> Upload deals</a></li>
+                        <li><a href="#"><i class="far fa-thumbs-up"></i>Manage reviews</a></li>
+                        <li><a href="#" class="logout-bg"><i class="fas fa-sign-out-alt"></i>LOGOUT</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        </div>
+
+        <!--main content wrapper-->
+        <div class="mcw">
+            <div class="container-fluid">
+                <div class="row m-0">
+                    <div class="col-12 col-md-7">
+                        <form class="card border-0 px-2 py-4 px-md-4 py-md-5 shadow-sm">
+                            <h3 class="pb-3">Add an event</h3>
+                            <div class="row px-3">
+                                <label class="mb-1">
+                                    <h6 class="mb-0 text-sm text-dark">Event Title</h6>
+                                </label>
+                                <input class="mb-4" type="text" name="email" placeholder="Enter an event title">
+                            </div>
+                            <div class="row px-3">
+                                <label class="mb-1">
+                                    <h6 class="mb-0 text-sm text-dark">Event Description</h6>
+                                </label>
+                                <div class="col-12 p-0">
+                                    <div class="w-100 col-12" id="eveDesc"></div>
+                                </div>
+                            </div>
+                            <div class="row mt-3 px-3">
+                                <label class="mb-1">
+                                    <h6 class="mb-0 text-sm text-dark">Add Image</h6>
+                                </label>
+                                <input type="file" name="featured-image">
+                            </div>
+                            <div class="row mt-3 px-3">
+                                <button type="submit" class="btn btn-blue text-center">Add Event</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end-main content wrapper-->
+    </header>
+
+    <!--Script-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/ckeditor.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        // CKEDITOR.replace( '#eveDesc' );
+
+        ClassicEditor.create(document.querySelector('#eveDesc'))
+    </script>
+
+
+
+
+</body>
+
+</html>
